@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    char alphabet[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+    char alphabet[100];
     int key = 2;
-        printf("%c", alphabet[20] + key);
-    if()
+        printf("%c", alphabet[] + key);
+    //if() //havent had time yet
     
   return 0;
 } 
