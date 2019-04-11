@@ -10,15 +10,15 @@ void main()
         printf("Enter Word: \n");
         scanf("%d", &z);
         printf("Enter a shift key: \n");
-        scanf("%d", &key)
-    for(z = 0; z < strlen(alphabet); z++);
+        scanf("%d", &key);
+    for(z = 0; z < 25; ++z);
     {
-        if(alphabet[z] == ' '){
-        else if
+        if(alphabet[z] == '\0'){
+        else if()
         {
             alphabet[z] = alphabet[z] + key;
             
-            if(alphabet[z] >= 'x')
+            if(alphabet[z] >= 'y')
             {
                 alphabet[z] = alphabet[z] - 26;
             }
@@ -26,7 +26,7 @@ void main()
         }
     }
     
-  printf("Your encryption: ", alphabet);
+  printf("Your encryption: %c", alphabet);
 } 
 
 //function? maybe?
