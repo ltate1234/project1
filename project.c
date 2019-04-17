@@ -3,16 +3,23 @@
  
 int main()
 {
-	char letters[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-	int i;
+	char letters[100];
+	int i, key;
 	
-	scanf("%d\n", &i);
+	printf("Enter Key: ");
+	scanf("%d", &key);
+	
+	printf("Enter Characters: ");
+	scanf("%s", letters);
+	
+	if(key >= 26){
+	    key = key - 26;
+	}
+	
+	for(i = 0; i < 100 && letters[i] != '\0'; i++)
+	letters[i] = letters[i] + key;
 
-	
-	if(i > 25) {
-	    i = i - 26;
-	} 
-	printf("%c", letters[i]);
+	printf("%s", letters);
 	
 	return 0;
 }
