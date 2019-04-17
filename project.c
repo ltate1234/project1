@@ -1,16 +1,18 @@
 #include <stdio.h>
-
-//protoype? maybe?
-
-void main()
+#include <stdlib.h>
+ 
+int main()
 {
-    int key, z;
-    char alphabet[100];
-    
-        printf("Enter Word: \n");
-        scanf("%d", &z);
-        printf("Enter a shift key: \n");
-        scanf("%d", &key);
-}
+	char letters[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+	int i;
+	
+	scanf("%d\n", &i);
 
-//function? maybe?
+	
+	if(i > 25) {
+	    i = i - 26;
+	} 
+	printf("%c", letters[i]);
+	
+	return 0;
+}
