@@ -36,6 +36,14 @@ int main()
 	    }
 	}
 	
+	if(key < 0)
+	{
+	    while(key < 0)
+	    {
+	        key = key + 25;
+	    }
+	}
+	
 	for(i = 0; i < 100 && letters[i] != '\0'; i++)
 	
 	letters[i] = letters[i] + key;
@@ -59,6 +67,14 @@ int main()
 	    while(key > 25)
 	    {
 	        key = key - 25;
+	    }
+	}
+	
+	if(key < 0)
+	{
+	    while(key < 0)
+	    {
+	        key = key + 25;
 	    }
 	}
 	
