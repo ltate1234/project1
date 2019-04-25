@@ -25,26 +25,20 @@ int main()
 	        printf("Enter Characters: ");
 	        scanf("%s", letters);
 	
-	        printf("Enter a rotation key between 0 and 25 (will shift to the right): ");
+	        printf("Enter a rotation key. (Will shift to the right): ");
 	        scanf("%d", &key);
-	
-	    if(key > 25)
-	    {
-	        while(key > 25)
+	    
+	    while(key > 25)
 	        {
 	            key = key - 25;
 	        }
-	    }
-	
-	    if(key < 0)
-	    {
-	        while(key < 0)
+
+        while(key < 0)
 	        {
 	            key = key + 25;
 	        }
-	    }
 	
-	    for(i = 0; i < 100 && letters[i] != '\0'; i++)
+	    for(i = 0; i < letters[i]; i++)
 	
 	    letters[i] = letters[i] + key;
 
@@ -59,32 +53,25 @@ int main()
 	        printf("Enter Characters: ");
 	        scanf("%s", letters);
 	
-	        printf("Enter a decryption key between 0 and 25 (will shift to the left): ");
+	        printf("Enter a decryption key. (Will shift to the left): ");
 	        scanf("%d", &key);
 	
-	    if(key > 25)
-	    {
-	        while(key > 25)
+        while(key > 25)
 	        {
 	            key = key - 25;
 	        }
-	    }
-	
-	    if(key < 0)
-	    {
-	        while(key < 0)
+	        
+        while(key < 0)
 	        {
 	            key = key + 25;
 	        }
-	    }
 	
-	    for(i = 0; i < 100 && letters[i] != '\0'; i++)
+	    for(i = 0; i < letters[i]; i++)
 	
 	    letters[i] = letters[i] - key;
 
 	    printf("%s", letters);
 	}
-	
 	
 	return 0;
 }
