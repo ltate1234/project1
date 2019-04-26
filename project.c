@@ -19,7 +19,7 @@ int main()
     
 	if(opt1 == 1)
 	{
-	    char letters[100];
+	    char letters[1024];
 	    int i, key;
 	
 	        printf("Enter Characters: ");
@@ -39,15 +39,17 @@ int main()
 	        }
 	
 	    for(i = 0; i < letters[i]; i++)
-	
-	    letters[i] = letters[i] + key;
 
+	   if(letters[i] + key < 90){letters[i] = letters[i] + key;}
+	                                                                                // need to fix
+	   if(letters[i] + key > 90){letters[i] = (letters[i] - 26) + key;}
+	    
 	    printf("%s", letters);
 	}
 	
 	if(opt1 == 2)
 	{
-	    char letters[100];
+	    char letters[1024];
 	    int i, key;
 	
 	        printf("Enter Characters: ");
@@ -72,6 +74,12 @@ int main()
 
 	    printf("%s", letters);
 	}
+	
+	
+	
+	
+	
+	
 	
 	return 0;
 }
