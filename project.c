@@ -93,11 +93,47 @@ int main()
 	    printf("%s", letters);
 	}
 	
+	if(option == 3)
+	{
+	    char letters[1024];
+	    int i;
+	    
+	        printf("Enter Characters: ");
+	        scanf("%s", letters);
+	        for(i = 0; i < letters[i]; i++)
+	        switch(letters[i]){
+	            case 'A': letters[i] = 'Q';break;
+	            case 'B': letters[i] = 'W';break;
+	            case 'C': letters[i] = 'E';break;
+	            case 'D': letters[i] = 'R';break;
+	            case 'E': letters[i] = 'T';break;
+	            case 'F': letters[i] = 'Y';break;
+	            case 'G': letters[i] = 'U';break;
+	            case 'H': letters[i] = 'I';break;
+	            case 'I': letters[i] = 'O';break;
+	            case 'J': letters[i] = 'P';break;
+	            case 'K': letters[i] = 'A';break;
+	            case 'L': letters[i] = 'S';break;
+	            case 'M': letters[i] = 'D';break;
+	            case 'N': letters[i] = 'F';break;
+	            case 'O': letters[i] = 'G';break;
+	            case 'P': letters[i] = 'H';break;
+	            case 'Q': letters[i] = 'J';break;
+	            case 'R': letters[i] = 'K';break;
+	            case 'S': letters[i] = 'L';break;
+	            case 'T': letters[i] = 'Z';break;
+	            case 'U': letters[i] = 'X';break;
+	            case 'V': letters[i] = 'C';break;
+	            case 'W': letters[i] = 'V';break;
+	            case 'X': letters[i] = 'B';break;
+	            case 'Y': letters[i] = 'N';break;
+	            case 'z': letters[i] = 'M';break;
+	        }
+	        
 	
+        printf("%s", letters);
 	
-	
-	
-	
+	}
 	
 	return 0;
 }
