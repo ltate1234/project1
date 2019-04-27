@@ -40,10 +40,16 @@ int main()
 	
 	    for(i = 0; i < letters[i]; i++)
 
-	   if(letters[i] + key < 90){letters[i] = letters[i] + key;}
-	                                                                                // need to fix
-	   if(letters[i] + key > 90){letters[i] = (letters[i] - 26) + key;}
-	    
+        if(letters[i] + key < 91)
+        {
+            letters[i] = letters[i] + key;
+        }
+
+        else if(letters[i] + key > 90)
+        {
+            letters[i] = (letters[i] - 26) + key;
+        }
+        
 	    printf("%s", letters);
 	}
 	
@@ -70,16 +76,18 @@ int main()
 	
 	    for(i = 0; i < letters[i]; i++)
 	
-	    letters[i] = letters[i] - key;
+	    if(letters[i] - key > 64)
+        {
+            letters[i] = letters[i] - key;
+        }
+
+        else if(letters[i] - key < 65)
+        {
+            letters[i] = (letters[i] + 26) - key;
+        }
 
 	    printf("%s", letters);
 	}
-	
-	
-	
-	
-	
-	
 	
 	return 0;
 }
