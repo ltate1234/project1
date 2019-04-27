@@ -3,21 +3,25 @@
  
 int main()
 {
-    int opt1;
+    int option;
     
         printf("Press 1 for Rotation Cipher Encryption. \nPress 2 for Rotation Cipher Decryption. \nPress 3 for Substitution Cipher Encryption. \nPress 4 for Substitution Cipher Decryption. \n");   //Prints the options to the console
-        scanf("%d", &opt1);     //Scans for the user input and assigns it to opt1
+        scanf("%d", &option);     //Scans for the user input and assigns it to opt1
     
-    if(opt1 > 2 || opt1 < 1)
+    while(option > 4 || option < 1)
     {
-        printf("Please enter valid option.\n");
-            while(opt1 > 2 || opt1 < 1)
-            {
-                scanf("%d", &opt1);
-            }
+        if(option > 4 || option < 1)
+        {
+            printf("Please enter valid option.\n");
+                while(option == 1 || option == 2 || option == 3 || option == 4)
+                {
+                    scanf("%d", &option);
+                }
+        }
+        scanf("%d", &option);
     }
     
-	if(opt1 == 1)
+	if(option == 1)
 	{
 	    char letters[1024];
 	    int i, key;
@@ -53,7 +57,7 @@ int main()
 	    printf("%s", letters);
 	}
 	
-	if(opt1 == 2)
+	if(option == 2)
 	{
 	    char letters[1024];
 	    int i, key;
@@ -88,6 +92,12 @@ int main()
 
 	    printf("%s", letters);
 	}
+	
+	
+	
+	
+	
+	
 	
 	return 0;
 }
