@@ -47,14 +47,14 @@ int main()      //The function that is used for the main code.
 	        scanf("%d", &key);      //Scans for the users input and addresses it to 'key'.
 	    
 	    while(key > 25)     //The while loop checks if the key is larger than 25 and will repeat until statement is false.
-	        {
-	            key = key - 25;     //Assigns 'key' - 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
-	        }
+        {
+            key = key - 25;     //Assigns 'key' - 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
+        }
 
         while(key < 0)      //The while loop checks if the key is smaller than 0 and will repeat until statement is false.
-	        {
-	            key = key + 25;     //Assigns 'key' + 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
-	        }
+        {
+            key = key + 25;     //Assigns 'key' + 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
+        }
 	
 	    for(i = 0; i < letters[i]; i++)     //This for loop initialises and assigns 'i' to 0, its condition is true if 'i' is less than 'letters[i]', then increments 'i' each loop until the condition is false.
                                             //The for loop is so that 'i' is a new byte for every letter and will stop once 'i' reaches the arrays size.
@@ -83,18 +83,18 @@ int main()      //The function that is used for the main code.
 	        scanf("%d", &key);      //Scans for the users input and addresses it to 'key'.
 	
         while(key > 25)     //The while loop checks if the key is larger than 25 and will repeat until statement is false.
-	        {
-	            key = key - 25;     //Assigns 'key' - 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
-	        }
+        {
+            key = key - 25;     //Assigns 'key' - 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
+        }
 	        
         while(key < 0)      //The while loop checks if the key is smaller than 0 and will repeat until statement is false.
-	        {
-	            key = key + 25;     //Assigns 'key' + 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
-	        }
+        {
+            key = key + 25;     //Assigns 'key' + 25 to 'key' and will repeat until while loop is false, this allows the key to be any integer and still work in the cipher.
+        }
 	
-	    for(i = 0; i < letters[i]; i++)     //This for loop initialises and assigns 'i' to 0, its condition is true if 'i' is less than 'letters[i]', then increments 'i' each loop until the condition is false.
+	for(i = 0; i < letters[i]; i++)     //This for loop initialises and assigns 'i' to 0, its condition is true if 'i' is less than 'letters[i]', then increments 'i' each loop until the condition is false.
                                             //The for loop is so that 'i' is a new byte for every letter and will stop once 'i' reaches the arrays size.
-	    if(letters[i] - key > 64)       //The if statement will continue if 'letters[i]' - 'key' is more than 64.
+	if(letters[i] - key > 64)       //The if statement will continue if 'letters[i]' - 'key' is more than 64.
         {
             letters[i] = letters[i] - key;      //letters[i]' is assigned 'letters[i] - key', this is the code that decrypts the word.
         }
@@ -153,7 +153,7 @@ int main()      //The function that is used for the main code.
 	
 	}
 	//This is the if statement to select the substitution decryption cipher. It will only accept capital letters in a single word from the user and only substitute with set letters.
-    if(option == 4)     //If statement that continues if option from the user input is equal to 4.
+        if(option == 4)     //If statement that continues if option from the user input is equal to 4.
 	{
 	    char letters[1024];     //Initialising the array 'letters' with size of 1024.
 	    int i;      //Initialising the integer 'i'.
