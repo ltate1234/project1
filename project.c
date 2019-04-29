@@ -145,7 +145,7 @@ int main()      //The function that is used for the main code.
             case 'W': letters[i] = 'V';break;
             case 'X': letters[i] = 'B';break;
             case 'Y': letters[i] = 'N';break;
-            case 'z': letters[i] = 'M';break;
+            case 'Z': letters[i] = 'M';break;
         }
 	        
 	
